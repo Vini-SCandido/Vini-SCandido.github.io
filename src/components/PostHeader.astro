@@ -1,0 +1,11 @@
+---
+const {frontmatter} = Astro.props
+---
+<div class="post-header">
+    <h1>{frontmatter.title}</h1>
+    <h3 class="darkened">{frontmatter.description}</h3>
+    <div class="post-header-author">
+        <p>{frontmatter.author}</p>
+        <p>{frontmatter.pubDate}</p>    
+    </div>
+</div>

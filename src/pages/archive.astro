@@ -1,8 +1,9 @@
 ---
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import Navigation from '../components/Navigation.astro';
 import '../styles/global.css'
-const pageTitle = "Sobre";
+const pageTitle = "Arquivo";
 ---
 
 <html lang="en">
@@ -14,7 +15,14 @@ const pageTitle = "Sobre";
     <title>{pageTitle}</title>
   </head>
   <body>
-	  <Header />
+    <Header />
+    <main>
+      <ul>
+        <li><a href="/posts/post-1/">Post 1</a></li>
+        <li><a href="/posts/post-2/">Post 2</a></li>
+        <li><a href="/posts/post-3/">Post 3</a></li>
+      </ul>
+    </main>
     <Footer />
   </body>
 </html>

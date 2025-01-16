@@ -2,7 +2,7 @@
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import '../styles/global.css'
-const pageTitle = "Sobre";
+const pageTitle = "Rumor Aleatório";
 ---
 
 <html lang="en">
@@ -15,6 +15,9 @@ const pageTitle = "Sobre";
   </head>
   <body>
 	  <Header />
+    <main>
+        <slot />
+    </main>
     <Footer />
   </body>
 </html>

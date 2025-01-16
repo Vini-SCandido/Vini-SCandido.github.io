@@ -1,27 +1,16 @@
 ---
+layout: '../../layouts/MarkdownLayout.astro'
 title: 'My First Blog Post'
-pubDate: 2022-07-01
+pubDate: '15 Jan 2025'
 description: 'This is the first post of my new Astro blog.'
-author: 'Astro Learner'
+author: 'Vinicius Souza'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public"]
 ---
-# My First Blog Post
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eveniet facilis hic consequuntur, veritatis eligendi expedita voluptatem tempore a, repudiandae, at consequatur placeat recusandae veniam provident? Enim, dolores. Eaque, molestiae.
 
-Published on: 2022-07-01
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eveniet facilis hic consequuntur, veritatis eligendi expedita voluptatem tempore a, repudiandae, at consequatur placeat recusandae veniam provident? Enim, dolores. Eaque, molestiae.
 
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
-
-## What I've accomplished
-
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
-
-2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
-
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
-
-## What's next
-
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eveniet facilis hic consequuntur, veritatis eligendi expedita voluptatem tempore a, repudiandae, at consequatur placeat recusandae veniam provident? Enim, dolores. Eaque, molestiae.
