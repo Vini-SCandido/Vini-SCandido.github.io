@@ -1,8 +1,15 @@
 ---
+import ArchiveCard from '../components/ArchiveCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css'
+const allPosts = Object.values(import.meta.glob("./posts/*.md", { eager: true })).slice(0, 3);
 const pageTitle = "Rumor Aleatório";
 ---
-<BaseLayout>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat temporibus voluptatem quis adipisci optio quidem, error voluptatum dolore nihil reiciendis mollitia quisquam! Cumque consequatur doloremque beatae dolorem iusto hic velit.</p>
+<BaseLayout pagetitle={pageTitle}>
+  <div class="archive-feed">
+    <section>
+      {allPosts.map((post: any) => <ArchiveCard card={post}/>)}
+      <h2 class="section-title">Recomendações</h2>
+    </section>
+  </div>
 </BaseLayout>

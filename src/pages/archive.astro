@@ -1,28 +1,14 @@
 ---
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import Navigation from '../components/Navigation.astro';
+import ArchiveCard from '../components/ArchiveCard.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css'
+const allPosts = Object.values(import.meta.glob("./posts/*.md", { eager: true }));
 const pageTitle = "Arquivo";
 ---
-
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-    <Header />
-    <main>
-      <ul>
-        <li><a href="/posts/post-1/">Post 1</a></li>
-        <li><a href="/posts/post-2/">Post 2</a></li>
-        <li><a href="/posts/post-3/">Post 3</a></li>
-      </ul>
-    </main>
-    <Footer />
-  </body>
-</html>
+<BaseLayout pagetitle={pageTitle}>
+  <div class="archive-feed">
+    <section>
+      {allPosts.map((post: any) => <ArchiveCard card={post}/>)}
+    </section>
+  </div>
+</BaseLayout>

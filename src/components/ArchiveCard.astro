@@ -1,0 +1,18 @@
+---
+import { Image } from "astro:assets";
+const { card } = Astro.props;
+---
+<div class="archive-card">
+  <a href={card.url}>
+    <article>
+      <div class="archive-card-text">
+        <h2 >{card.frontmatter.title}</h2>
+        <p>{card.frontmatter.description}</p>
+        <p>{card.frontmatter.pubDate}</p>
+      </div>
+      <div class="archive-card-img">
+        <img src={card.frontmatter.image.url} alt="castle" />
+      </div>
+    </article > 
+  </a>
+</div>

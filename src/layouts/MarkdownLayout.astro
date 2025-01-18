@@ -4,9 +4,9 @@ import BaseLayout from "./BaseLayout.astro"
 const {frontmatter} = Astro.props
 ---
 <BaseLayout>
-    <article>
+    <article class="post roboto-slab-100">
         <PostHeader frontmatter={frontmatter}/>
-        <div class="post">
+        <div class="content grey-text">
             <slot />
         </div>
     </article>

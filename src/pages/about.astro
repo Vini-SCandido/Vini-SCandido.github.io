@@ -1,20 +1,9 @@
 ---
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css'
 const pageTitle = "Sobre";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-	  <Header />
-    <Footer />
-  </body>
-</html>
+<BaseLayout pagetitle={pageTitle}>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ut inventore fugit eaque sint corporis, nostrum amet, saepe asperiores consequuntur voluptate minima accusamus ratione quo ad quibusdam qui mollitia minus?</p>
+</BaseLayout>
