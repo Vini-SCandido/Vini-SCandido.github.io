@@ -1,13 +1,11 @@
 ---
+import PostArticle from "../components/PostArticle.astro"
 import PostHeader from "../components/PostHeader.astro"
 import BaseLayout from "./BaseLayout.astro"
 const {frontmatter} = Astro.props
 ---
 <BaseLayout>
-    <article class="post roboto-slab-100">
-        <PostHeader frontmatter={frontmatter}/>
-        <div class="content grey-text">
-            <slot />
-        </div>
-    </article>
+  <PostArticle frontmatter={frontmatter}>
+    <slot />
+  </PostArticle>
 </BaseLayout>

@@ -1,5 +1,34 @@
 ---
 ---
-<a href="/"><strong>Início</strong></a>
-<a href="/about/"><strong>Sobre</strong></a>
-<a href="/archive/"><strong>Arquivo</strong></a>
+<style>
+  .header-nav nav {
+    display: flex;
+    gap: 20px;
+    margin-left: 30px;
+  }
+
+  .header-nav a {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--color-text-gray);
+    padding: 10px;
+  }
+
+  .header-nav a:visited {
+    color: var(--color-text-gray);
+  }
+  
+  .header-nav a:hover {
+    color: crimson;
+  }
+</style>
+
+<div class="header-nav">
+  <nav>
+    <a href="/"><strong>Início</strong></a>
+    <a href="/about/"><strong>Sobre</strong></a>
+    <a href="/archive/"><strong>Arquivo</strong></a>
+  </nav>
+</div>

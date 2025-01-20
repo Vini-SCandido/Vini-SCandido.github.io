@@ -1,9 +1,34 @@
 ---
+import Divider from "./Divider.astro"
 import Navigation from "./Navigation.astro"
 ---
-<header class="main-header">
+<style>
+  .main-header h1 {
+    display: flex;
+    margin: 0;
+    font-size: 3rem;
+    font-family: 'JBLACK', serif;
+    color: red;
+    align-items: center;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .main-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 0px;
+    gap: 10px;
+  }
+</style>
+
+<div class="main-header">
+  <header>
     <h1>Rumor Aleatório</h1>
-    <nav>
-        <Navigation />
-    </nav>
-</header>
+    <Divider />
+    <Navigation />
+    <Divider />
+  </header>
+</div>

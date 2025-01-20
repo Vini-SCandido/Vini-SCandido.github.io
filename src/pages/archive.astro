@@ -1,14 +1,10 @@
 ---
-import ArchiveCard from '../components/ArchiveCard.astro';
+import ArchiveFeed from '../components/ArchiveFeed.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css'
 const allPosts = Object.values(import.meta.glob("./posts/*.md", { eager: true }));
 const pageTitle = "Arquivo";
 ---
 <BaseLayout pagetitle={pageTitle}>
-  <div class="archive-feed">
-    <section>
-      {allPosts.map((post: any) => <ArchiveCard card={post}/>)}
-    </section>
-  </div>
+  <ArchiveFeed />
 </BaseLayout>

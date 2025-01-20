@@ -1,6 +1,17 @@
 ---
 import Copyright from "./Copyright.astro";
 ---
-<footer>
-    <Copyright />
-</footer>
+<style>
+  .main-footer footer {
+    display: flex;
+    justify-content: center;
+  }
+</style>
+
+<div class="main-footer">
+  <footer>
+    <div class="footer-copyright">
+      <Copyright />
+    </div>
+  </footer>
+</div>

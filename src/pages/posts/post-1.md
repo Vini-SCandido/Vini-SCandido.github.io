@@ -5,7 +5,7 @@ pubDate: '15 Jan, 2025'
 description: 'This is the first post of my new Astro blog.'
 author: 'Vinicius Souza'
 image:
-    url: 'https://docs.astro.build/assets/rose.webp'
+    url: 'https://www.oldbookillustrations.com/site/assets/high-res/1814/midsummer-eve-768.jpg'
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public"]
 ---

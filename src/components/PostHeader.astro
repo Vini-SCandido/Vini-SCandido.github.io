@@ -1,11 +1,28 @@
 ---
 const {frontmatter} = Astro.props
 ---
+<style>
+  .post-header h1 {
+    font-size: 2rem;
+    text-transform: capitalize;
+  }
+
+  .post-header-author {
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+
+  .post-header-author p {
+    line-height: 0.5rem;
+  }
+</style>
+
 <div class="post-header">
-    <h1>{frontmatter.title}</h1>
-    <h3 class="darkened">{frontmatter.description}</h3>
-    <div class="post-header-author">
-        <p>{frontmatter.author}</p>
-        <p>{frontmatter.pubDate}</p>    
-    </div>
+  <h1>{frontmatter.title}</h1>
+  <h3>{frontmatter.description}</h3>
+  <div class="post-header-author">
+    <p>{frontmatter.author}</p>
+    <p>{frontmatter.pubDate}</p>    
+  </div>
 </div>

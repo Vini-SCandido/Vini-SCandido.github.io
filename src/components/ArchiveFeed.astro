@@ -1,0 +1,17 @@
+---
+import ArchiveCard from "./ArchiveCard.astro";
+const allPosts = Object.values(import.meta.glob("../pages/posts/*.md", { eager: true }));
+---
+<style>
+  .archive-feed {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+</style>
+
+<div class="archive-feed">
+  <article>
+    {allPosts.map((post: any) => <ArchiveCard card={post}/>)}
+  </article>
+</div>

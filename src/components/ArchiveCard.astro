@@ -1,17 +1,75 @@
 ---
 import { Image } from "astro:assets";
+
 const { card } = Astro.props;
 ---
+<style>
+  .archive-card {
+    border-radius: 0.5rem;
+    width: 100%;
+    transition: transform 0.2s ease;
+  }
+
+  .archive-card:hover {
+    transform: scale(1.02);
+    background-color: #edeee7;
+  }
+
+  .archive-card > a {
+    text-decoration: none;
+    color: #363737;
+  }
+
+  .archive-card > a:visited {
+    color: #363737;
+  }
+
+  .archive-card article {
+    display: flex;
+    align-items: center;
+  }
+
+  .archive-card-text {
+    width: 40ch;
+    overflow-wrap: break-word;
+    padding: 1rem;
+  }
+
+  .archive-card-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.05);
+  }
+
+  .archive-card-img {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 1rem;
+    overflow: hidden;
+    width: 160px;
+    height: 125px;
+    border-radius: 0.5rem;
+  }
+
+  @media screen and (max-width: 768px){
+    .archive-card-text {
+      width: 20ch;
+    }
+  }
+</style>
+
 <div class="archive-card">
   <a href={card.url}>
     <article>
       <div class="archive-card-text">
-        <h2 >{card.frontmatter.title}</h2>
+        <h3>{card.frontmatter.title}</h3>
         <p>{card.frontmatter.description}</p>
         <p>{card.frontmatter.pubDate}</p>
       </div>
       <div class="archive-card-img">
-        <img src={card.frontmatter.image.url} alt="castle" />
+        <Image src={card.frontmatter.image.url} alt={card.frontmatter.image.alt} inferSize={ true }/>
       </div>
     </article > 
   </a>

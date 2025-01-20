@@ -1,0 +1,31 @@
+---
+import PostHeader from "./PostHeader.astro";
+const { frontmatter } = Astro.props
+---
+<style>
+  .post-article {
+    display: flex;
+    justify-content: center;
+  }
+
+  .post-content {
+    width: 80ch;
+    line-height: 2rem;
+    font-size: 1.3rem;
+  }
+
+  @media screen and (max-width: 768px){
+    .post-content {
+      width: 100%;
+    }
+  }
+</style>
+
+<div class="post-article grey-text">
+  <article class="roboto-slab-100">
+    <PostHeader frontmatter={frontmatter}/>
+    <div class="post-content">
+      <slot />
+    </div>
+  </article>
+</div>

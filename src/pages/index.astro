@@ -1,15 +1,52 @@
 ---
-import ArchiveCard from '../components/ArchiveCard.astro';
+import { Image } from 'astro:assets';
+import ArchiveFeed from '../components/ArchiveFeed.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css'
-const allPosts = Object.values(import.meta.glob("./posts/*.md", { eager: true })).slice(0, 3);
 const pageTitle = "Rumor Aleatório";
 ---
+<style>
+  .home-page-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .home-page-content h2 {
+    padding: 1rem 1rem 0 1rem;
+    margin: 0;
+    color: var(--color-text-gray);
+  }
+
+  .home-page-aside {
+    height: 100%;
+    width: 40ch;
+  }
+
+  .home-page-aside p {
+    margin: 0;
+    padding: 1rem;
+    color: var(--color-text-gray);
+  }
+
+  .home-page-aside img {
+    width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+  }
+</style>
+
 <BaseLayout pagetitle={pageTitle}>
-  <div class="archive-feed">
+  <div class="home-page-content">
     <section>
-      {allPosts.map((post: any) => <ArchiveCard card={post}/>)}
-      <h2 class="section-title">Recomendações</h2>
+      <h2>Últimas publicações</h2>
+      <ArchiveFeed />
     </section>
+    <div class="home-page-aside">
+      <aside>
+        <h2>Um rumor, por favor</h2>
+        <p>Dicas de leitura, cenários, idéias, relatos e regras para seu RPG de mesa.</p>
+        <Image src="https://www.oldbookillustrations.com/site/assets/high-res/n-d-1908/cloud-kingdom-opening-768.jpg" alt="cloud kingdom" inferSize={ true }/>
+      </aside>
+    </div>
   </div>
 </BaseLayout>

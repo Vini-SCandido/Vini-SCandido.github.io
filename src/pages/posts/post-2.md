@@ -3,7 +3,7 @@ title: My Second Blog Post
 author: Astro Learner
 description: "After learning some Astro, I couldn't stop!"
 image:
-    url: "https://docs.astro.build/assets/arc.webp"
+    url: "https://www.oldbookillustrations.com/site/assets/high-res/1912/jackal-betel-leaves-768.jpg"
     alt: "The Astro logo on a dark background with a purple gradient arc."
 pubDate: 2022-07-08
 tags: ["astro", "blogging", "learning in public", "successes"]
