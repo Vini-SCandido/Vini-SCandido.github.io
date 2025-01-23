@@ -1,5 +1,6 @@
 :root {
   --color-text-gray: #363737;
+  --color-html-background: #f8f9f1;
 }
 
 @font-face {
@@ -22,7 +23,7 @@
 }
 
 html {
-  background-color: #f8f9f1;
+  background-color: var(--color-html-background);
   font-family: serif;
 }
 

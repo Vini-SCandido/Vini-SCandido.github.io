@@ -1,17 +1,21 @@
 ---
+const { number } = Astro.props
 import ArchiveCard from "./ArchiveCard.astro";
 const allPosts = Object.values(import.meta.glob("../pages/posts/*.md", { eager: true }));
+const Posts = number === 0
+  ? allPosts
+  : allPosts.slice(0, number)
 ---
 <style>
   .archive-feed {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 100%;
+    align-items: center;
+    width: auto;
   }
 </style>
 
 <div class="archive-feed">
-  <article>
-    {allPosts.map((post: any) => <ArchiveCard card={post}/>)}
-  </article>
+  {Posts.map((post: any) => <ArchiveCard card={post}/>)}
 </div>

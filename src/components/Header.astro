@@ -4,12 +4,10 @@ import Navigation from "./Navigation.astro"
 ---
 <style>
   .main-header h1 {
-    display: flex;
     margin: 0;
     font-size: 3rem;
     font-family: 'JBLACK', serif;
     color: red;
-    align-items: center;
     padding-top: 10px;
     text-align: center;
   }
@@ -22,13 +20,23 @@ import Navigation from "./Navigation.astro"
     padding-bottom: 0px;
     gap: 10px;
   }
+
+  @media screen and (min-width: 768px){
+    .main-header {
+      justify-content: left;
+    }
+
+    .main-header header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 </style>
 
 <div class="main-header">
   <header>
     <h1>Rumor Aleatório</h1>
-    <Divider />
     <Navigation />
-    <Divider />
   </header>
 </div>

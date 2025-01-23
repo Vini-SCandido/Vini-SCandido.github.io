@@ -3,50 +3,125 @@ import { Image } from 'astro:assets';
 import ArchiveFeed from '../components/ArchiveFeed.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css'
+import AuthorCard from '../components/AuthorCard.astro';
 const pageTitle = "Rumor Aleatório";
 ---
 <style>
   .home-page-content {
     display: flex;
     justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
   }
 
   .home-page-content h2 {
-    padding: 1rem 1rem 0 1rem;
     margin: 0;
     color: var(--color-text-gray);
+  }
+
+  .home-page-intro {
+    width: 50ch;
+    padding: 1rem;
+  }
+
+  .home-page-intro p {
+    text-align: justify;
+    color: var(--color-text-gray);
+  }
+
+  .home-page-intro-img img {
+    mix-blend-mode: luminosity;
+    width: 100%;
+    height: auto;
+    transform: scale(1.2);
+  }
+
+  .home-page-intro-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    aspect-ratio: 2.5;
+    margin: 0;
+    margin-top: 1rem;
   }
 
   .home-page-aside {
-    height: 100%;
-    width: 40ch;
+    filter: brightness(0.9);
+    margin: 0;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
   }
 
-  .home-page-aside p {
-    margin: 0;
-    padding: 1rem;
+  .home-page-aside h3 {
+    margin-bottom: 1rem;
     color: var(--color-text-gray);
   }
 
-  .home-page-aside img {
-    width: 100%;
-    height: auto;
-    mix-blend-mode: multiply;
+  .home-page-aside li {
+    margin: 0;
+    margin-bottom: 0.2rem;
+    color: var(--color-text-gray);
+  }
+
+  .home-page-latest-posts {
+    padding: 1rem;
+  }
+
+  @media screen and (max-width: 768px){
+    .home-page-content {
+      flex-direction: column;
+    }
+
+    .home-page-latest-posts {
+      padding: 0;
+    }
+
+    .home-page-intro {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 1rem;
+    }
   }
 </style>
 
 <BaseLayout pagetitle={pageTitle}>
   <div class="home-page-content">
-    <section>
-      <h2>Últimas publicações</h2>
-      <ArchiveFeed />
-    </section>
-    <div class="home-page-aside">
-      <aside>
+    <div class="home-page-latest-posts">
+      <section>
+        <h2>Últimas publicações</h2>
+        <ArchiveFeed number="4" />
+      </section>
+    </div>
+    <div class="home-page-intro">
+      <section>
         <h2>Um rumor, por favor</h2>
-        <p>Dicas de leitura, cenários, idéias, relatos e regras para seu RPG de mesa.</p>
-        <Image src="https://www.oldbookillustrations.com/site/assets/high-res/n-d-1908/cloud-kingdom-opening-768.jpg" alt="cloud kingdom" inferSize={ true }/>
-      </aside>
+        <p>Dicas de leitura, cenários, idéias, relatos e regras da casa para seu RPG de mesa.</p>
+        <div class="home-page-intro-img">
+          <Image src="https://mdl.artvee.com/sftb/909794il.jpg" alt="lion" inferSize={ true } loading="eager"/>
+        </div>
+        <div class="home-page-aside">
+          <aside>
+            <h2>Recomendações</h2>
+            <nav>
+              <h3>Canais</h3>
+              <ul>
+                <li><a target="_blank" href="https://www.youtube.com/@BanditsKeep">Bandit's Keep</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/@dmquiral5942">DM Quiral</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/@Earthmote">Earthmote</a></li>
+              </ul>
+              <h3>Sistemas</h3>
+              <ul>
+                <li><a target="_blank" href="https://www.youtube.com/@BanditsKeep">DCC</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/@dmquiral5942">Swords & Wizardry</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/@Earthmote">D20age</a></li>
+              </ul>
+            </nav>
+          </aside>
+        </div>
+      </section>
     </div>
   </div>
 </BaseLayout>

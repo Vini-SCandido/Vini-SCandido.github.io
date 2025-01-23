@@ -6,13 +6,16 @@ const { card } = Astro.props;
 <style>
   .archive-card {
     border-radius: 0.5rem;
-    width: 100%;
+    width: 60ch;
     transition: transform 0.2s ease;
   }
 
   .archive-card:hover {
-    transform: scale(1.02);
-    background-color: #edeee7;
+    transform: translateY(-2px);
+  }
+
+  .archive-card:hover .archive-card-text {
+    color: crimson;
   }
 
   .archive-card > a {
@@ -30,16 +33,23 @@ const { card } = Astro.props;
   }
 
   .archive-card-text {
-    width: 40ch;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 65%;
     overflow-wrap: break-word;
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 0;
+  }
+
+  .archive-card-text p, .archive-card-text h3 {
+    margin: 0;
   }
 
   .archive-card-img img {
-    height: 100%;
+    height: auto;
     width: 100%;
     object-fit: cover;
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 
   .archive-card-img {
@@ -48,14 +58,23 @@ const { card } = Astro.props;
     display: flex;
     margin: 1rem;
     overflow: hidden;
-    width: 160px;
-    height: 125px;
+    width: 35%;
+    aspect-ratio: 1.6;
     border-radius: 0.5rem;
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
+    .archive-card {
+      width: 100%;
+    }
+
     .archive-card-text {
-      width: 20ch;
+      width: 30ch;
+    }
+
+    .archive-card-img {
+      width: 15ch;
+      aspect-ratio: 1.3;
     }
   }
 </style>
@@ -69,7 +88,7 @@ const { card } = Astro.props;
         <p>{card.frontmatter.pubDate}</p>
       </div>
       <div class="archive-card-img">
-        <Image src={card.frontmatter.image.url} alt={card.frontmatter.image.alt} inferSize={ true }/>
+        <Image src={card.frontmatter.image.url} alt={card.frontmatter.image.alt} inferSize={ true } loading="eager"/>
       </div>
     </article > 
   </a>
