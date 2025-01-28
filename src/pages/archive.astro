@@ -5,6 +5,24 @@ import '../styles/global.css'
 const allPosts = Object.values(import.meta.glob("./posts/*.md", { eager: true }));
 const pageTitle = "Arquivo";
 ---
+<style>
+  .archive-content {
+    padding: 1rem;
+    color: var(--color-text-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .archive-content h2 {
+    margin: 0;
+  }
+</style>
+
 <BaseLayout pagetitle={pageTitle}>
-  <ArchiveFeed />
+  <div class="archive-content">
+    <h2>Arquivo</h2>
+    <ArchiveFeed />
+  </div>
 </BaseLayout>

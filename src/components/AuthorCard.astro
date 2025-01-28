@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets'
-import avatar from '../assets/avatar.jpg'
+import avatar from '../assets/avatar.png'
+const { frontmatter } = Astro.props
 ---
 <style>
   .author-card {
@@ -28,7 +29,7 @@ import avatar from '../assets/avatar.jpg'
     margin-left: 1rem;
     flex-direction: column;
     justify-content: center;
-    gap: 2px;
+    gap: 9px;
   }
 
   .author-card-text p {
@@ -38,10 +39,10 @@ import avatar from '../assets/avatar.jpg'
 
 <div class="author-card">
   <div class="author-card-img">
-    <Image src={avatar} alt="knight" />
+    <Image src={avatar} alt="knight" loading="eager" />
   </div>
   <div class="author-card-text">
     <p>Vinicius Souza</p>
-    <p>Autor</p>
+    <p>{frontmatter.pubDate}</p>
   </div>
 </div>

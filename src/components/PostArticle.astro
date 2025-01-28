@@ -1,4 +1,5 @@
 ---
+import Divider from "./Divider.astro";
 import PostHeader from "./PostHeader.astro";
 const { frontmatter } = Astro.props
 ---
@@ -6,12 +7,13 @@ const { frontmatter } = Astro.props
   .post-article {
     display: flex;
     justify-content: center;
+    color: var(--color-text-gray);
   }
 
   .post-content {
     width: 80ch;
     line-height: 2rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   @media screen and (max-width: 768px){
@@ -21,8 +23,8 @@ const { frontmatter } = Astro.props
   }
 </style>
 
-<div class="post-article grey-text">
-  <article class="roboto-slab-100">
+<div class="post-article">
+  <article class="roboto-slab-400">
     <PostHeader frontmatter={frontmatter}/>
     <div class="post-content">
       <slot />
