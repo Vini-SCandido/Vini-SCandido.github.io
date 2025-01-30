@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import ArchiveFeed from '../components/ArchiveFeed.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css'
-import AuthorCard from '../components/AuthorCard.astro';
+import lion from '../assets/lion.jpg'
 const pageTitle = "Rumor Aleatório";
 ---
 <style>
@@ -75,10 +75,6 @@ const pageTitle = "Rumor Aleatório";
       flex-direction: column;
     }
 
-    .home-page-latest-posts {
-      padding: 0;
-    }
-
     .home-page-intro {
       width: 100%;
       padding: 0;
@@ -100,7 +96,7 @@ const pageTitle = "Rumor Aleatório";
         <h2>Um Rumor, Por Favor</h2>
         <p>Dicas de leitura, cenários, idéias, relatos e regras da casa para seu RPG de mesa.</p>
         <div class="home-page-intro-img">
-          <Image src="https://mdl.artvee.com/sftb/909794il.jpg" alt="lion" inferSize={ true } loading="eager"/>
+          <Image src={lion} alt="lion" loading="eager"/>
         </div>
         <div class="home-page-aside">
           <aside>

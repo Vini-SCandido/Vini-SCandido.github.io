@@ -6,23 +6,40 @@ const allPosts = Object.values(import.meta.glob("./posts/*.md", { eager: true })
 const pageTitle = "Arquivo";
 ---
 <style>
+  .archive-section {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+
   .archive-content {
     padding: 1rem;
     color: var(--color-text-gray);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding: 1rem;
+    width: 80ch;
   }
 
   .archive-content h2 {
     margin: 0;
   }
+
+  @media screen and (max-width: 768px) {
+    .archive-content {
+      padding: 1rem;
+      color: var(--color-text-gray);
+      padding: 1rem;
+      width: 100%;
+    }
+  }
 </style>
 
 <BaseLayout pagetitle={pageTitle}>
-  <div class="archive-content">
-    <h2>Arquivo</h2>
-    <ArchiveFeed />
+  <div class="archive-section">
+    <section>
+      <div class="archive-content">
+        <h2>Arquivo</h2>
+        <ArchiveFeed />
+      </div>
+    </section>
   </div>
 </BaseLayout>

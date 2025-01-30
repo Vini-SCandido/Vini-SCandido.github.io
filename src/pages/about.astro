@@ -1,6 +1,8 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css'
+import space from '../assets/about.png'
 const pageTitle = "Sobre";
 ---
 <style>
@@ -13,7 +15,6 @@ const pageTitle = "Sobre";
 
   .about-content {
     width: 80ch;
-    font-size: 1.1rem;
     line-height: 1.0rem;
     color: var(--color-text-gray);
     padding: 1rem;
@@ -23,12 +24,27 @@ const pageTitle = "Sobre";
     margin: 0;
   }
 
+  .about-content-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-content-img img {
+    mix-blend-mode: darken;
+  }
+
   .about-content-text p {
     line-height: 1.5rem;
+    text-align: justify;
   }
 
   @media screen and (max-width: 768px) {
     .about-content {
+      width: 100%;
+    }
+
+    .about-content-img img{
       width: 100%;
     }
   }
@@ -43,6 +59,9 @@ const pageTitle = "Sobre";
           <p>Bem-vindo ao Rumor Aleatório! Neste blog você encontrará ideias que encontro em livros, reflexões e conversas a respeito de ficção e RPG. Novo ou não no hobby, te convido a trocar um rumor, um meu por um seu. O que ouviu por ai?</p>
           <p>Me chamo Vinícius, tenho 23 anos e já explorei Arrakis, Lordran, Tarbean, Beleriand e Terramar. Cada um com suas peculiaridades, dignas de serem investigadas. Se você é um devorador de mundos e gosta de RPG, encontrará aqui os rumores desses lugares.</p>
           <p>Esse é um blog de RPG old-school, e apresento um estilo que busca emular as mesmas sensações de mistério e conquista de por o pé em uma galaxia tão, tão distante.</p>  
+        </div>
+        <div class="about-content-img">
+          <Image src={space} alt="outer space"/>
         </div>
       </div>
     </section>
