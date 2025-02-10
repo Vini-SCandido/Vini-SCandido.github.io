@@ -14,6 +14,9 @@ export async function GET(context) {
       description: post.data.description,
       link: `/posts/${post.id}/`
     })),
-    customData: `<language>pt-br</language>`,
+    customData: `<language>pt-br</language><atom:link href="https://vini-scandido.github.io/rss.xml" rel="self" type="application/rss+xml" />`,
+    xmlns: {
+      atom: 'http://www.w3.org/2005/Atom',
+    },
   })
 }
