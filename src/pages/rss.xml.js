@@ -7,7 +7,6 @@ const parser = new MarkdownIt();
 export async function GET(context) {
   const posts = await getCollection("blog");
   return rss({
-    stylesheet: '/rss/styles.xsl',
     title: 'Rumor Aleatório',
     description: 'Um blog de aventuras fantásticas',
     site: context.site,
