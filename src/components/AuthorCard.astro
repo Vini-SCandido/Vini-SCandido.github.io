@@ -43,6 +43,6 @@ const { frontmatter } = Astro.props
   </div>
   <div class="author-card-text">
     <p>Vinicius Souza</p>
-    <p>{frontmatter.pubDate}</p>
+    <p>{frontmatter.pubDate.toLocaleDateString('pt-BR')}</p>
   </div>
 </div>

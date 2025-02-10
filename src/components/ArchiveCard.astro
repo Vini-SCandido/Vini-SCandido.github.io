@@ -67,27 +67,28 @@ const { card } = Astro.props;
       width: 100%;
     }
 
-    .archive-card-text {
-      width: 100%;
+    .archive-card-img {
+      aspect-ratio: 1;
+      height: 100%;
     }
 
-    .archive-card-img {
-      width: 15ch;
-      aspect-ratio: 1.3;
+    .archive-card-img img {
+      height: 100%;
+      width: auto;
     }
   }
 </style>
 
 <div class="archive-card">
-  <a href={card.url}>
+  <a href={`/posts/${card.id}/`}>
     <article>
       <div class="archive-card-text">
-        <h3>{card.frontmatter.title}</h3>
-        <p>{card.frontmatter.description}</p>
-        <p>{card.frontmatter.pubDate}</p>
+        <h3>{card.data.title}</h3>
+        <p>{card.data.description}</p>
+        <p>{card.data.pubDate.toLocaleDateString('pt-BR')}</p>
       </div>
       <div class="archive-card-img">
-        <Image src={card.frontmatter.image.url} alt={card.frontmatter.image.alt} inferSize={ true } loading="eager"/>
+        <Image src={card.data.image.url} alt={card.data.image.alt} inferSize={ true } loading="eager"/>
       </div>
     </article > 
   </a>
