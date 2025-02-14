@@ -3,7 +3,10 @@ import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css'
 import space from '../assets/about.png'
-const pageTitle = "Sobre";
+const data = {
+  title: "Sobre",
+  description: "Sobre o blog",
+}
 ---
 <style>
   .about-section {
@@ -49,7 +52,7 @@ const pageTitle = "Sobre";
   }
 </style>
 
-<BaseLayout pagetitle={pageTitle}>
+<BaseLayout data={data}>
   <div class="about-section">
     <section>
       <div class="about-content">

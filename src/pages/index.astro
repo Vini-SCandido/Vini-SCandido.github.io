@@ -4,7 +4,10 @@ import ArchiveFeed from '../components/ArchiveFeed.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css'
 import lion from '../assets/lion.jpg'
-const pageTitle = "Rumor Aleatório";
+const data = {
+  title: "Rumor Aleatório",
+  description: "Dicas de leitura, cenários, idéias, relatos e regras da casa para seu RPG de mesa",
+}
 ---
 <style>
   .home-page-content {
@@ -87,8 +90,7 @@ const pageTitle = "Rumor Aleatório";
     }
   }
 </style>
-
-<BaseLayout pagetitle={pageTitle}>
+<BaseLayout data={data}>
   <div class="home-page-content">
     <div class="home-page-latest-posts">
       <section>
