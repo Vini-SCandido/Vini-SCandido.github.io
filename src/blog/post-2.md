@@ -1,10 +1,10 @@
 ---
 title: 'O que é o estilo de jogo old-school?'
-pubDate: 2025-02-09
+pubDate: 2025-02-14
 description: 'Principios para jogar aventuras nesses estilo'
 author: 'Vinicius Souza'
 image:
-    url: '../assets/title/post-1.jpg'
+    url: '../assets/title/post-2.jpg'
     alt: 'Painting of two people in a cold landscape'
 tags: ["#RPG", "#Preparação"]
 ---
