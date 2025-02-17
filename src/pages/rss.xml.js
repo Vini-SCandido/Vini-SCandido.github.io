@@ -19,6 +19,7 @@ export async function GET(context) {
       content: sanitizeHtml(parser.render(post.body), {
         allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img'])
       }),
+      categories: post.data.categories,
     })),
     customData: `<language>pt-br</language><atom:link href="https://vini-scandido.github.io/rss.xml" rel="self" type="application/rss+xml" />`,
     xmlns: {

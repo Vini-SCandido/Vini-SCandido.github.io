@@ -12,7 +12,7 @@ const {frontmatter} = Astro.props
   }
 </style>
 
-<BaseLayout data={frontmatter}>
+<BaseLayout data={frontmatter} image={frontmatter.image.url} ogtype="article">
   <PostArticle frontmatter={frontmatter}>
     <Divider />
     <div class="markdown-layout-img">

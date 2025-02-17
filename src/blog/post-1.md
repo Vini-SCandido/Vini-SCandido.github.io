@@ -5,7 +5,7 @@ description: 'Uma reflexão das primeiras experiências com RPGs'
 author: 'Vinicius Souza'
 image:
     url: '../assets/title/post-1.jpg'
-    alt: 'Painting of two people in a cold landscape'
+    alt: 'Dois viajantes em um cenário nevado'
 tags: ["#RPG", "#Preparação"]
 ---
 As primeiras experiências com qualquer hobby envolvem certos fracassos e aprendizados, momentos dos quais lembramos mais tarde com humor e reflexão. Contudo, embora pessoais, acredito que as experiências podem ter sido similares para muitos que começaram a brincar de faz de conta nos últimos dez anos. Sistemas que divergiam da proposta de jogo, pressão por performance teatral e plots intrincados podem ter aparecido nas suas primeiras sessões, criando a ideia de que esse é o único e tortuoso caminho. Contudo, ao escolher um conjunto de regras alinhado às expectativas, priorizar as decisões dos personagens e diversificar as soluções de problemas, a experiência será mais harmônica para mestre e jogador.
