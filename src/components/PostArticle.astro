@@ -1,5 +1,4 @@
 ---
-import Divider from "./Divider.astro";
 import PostHeader from "./PostHeader.astro";
 const { frontmatter } = Astro.props
 ---
@@ -12,13 +11,16 @@ const { frontmatter } = Astro.props
 
   .post-content {
     width: 80ch;
-    line-height: 2rem;
+    line-height: 1.6rem;
     font-size: 1.1rem;
     text-align: justify;
   }
 
-  p img {
+  .post-content img {
+    display: block;
+    margin: auto;
     width: 100%;
+    height: auto;
   }
 
   @media screen and (max-width: 768px){
