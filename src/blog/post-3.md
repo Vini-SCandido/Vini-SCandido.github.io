@@ -28,17 +28,17 @@ Não é a primeira coisa que se pensa ao começar um jogo solo, que geralmente c
 
 Mapas geralmente demandam tempo e quando uma etapa começa a tomar tempo demais, posso acabar perdendo o interesse, então a verossimilhança será deixada um pouco de lado em favor de uma maior fluidez.
 
-Como guia, utilizei os procedimentos do blog *The Welsh Piper*, *[Hex-based Campaign Design](https://welshpiper.com/hex-based-campaign-design-part-1/)*, agrupando hexágonos ao redor terrenos principais. Adicionei alguns rios e obtive o seguinte resultado:
+Como guia, utilizei os procedimentos do blog *The Welsh Piper*, *[Hex-based Campaign Design](https://welshpiper.com/hex-based-campaign-design-part-1/)*, agrupando hexágonos em terrenos principais. Adicionei alguns rios e obtive o seguinte resultado:
 
 ![img](../assets/1/map1.jpeg)
 
-Os pontos em vermelho são os principais pontos habitados, gerados por uma rolagem de 1 em 1d20. Escolhi o ponto mais privilegiado para ser uma cidade e sorteei os outros com base no livro 4: *The Campaign* de Zylarthen. Como cada hexágono representa 15 milhas, há espaço para assentamentos menores dentro de cada hexágono já ocupado.
+Os pontos em vermelho são os principais pontos habitados, gerados por uma rolagem de 1 em 1d20. Escolhi o ponto mais privilegiado para ser uma cidade grande e sorteei os outros com base no livro 4: *The Campaign* de Zylarthen. Como cada hexágono representa 15 milhas, há espaço para assentamentos menores dentro de cada hexágono já ocupado.
 
-* △ São torres de arcanistas
-* ◆ São Cidades
+* △ São torres
+* ◆ São cidades médias
 * ◇ São vilarejos
-* ○ São Templos
-* ■ São cidades
+* ○ São templos
+* ■ São cidades grandes
 
 Agora só falta um nome para a região. Escolhi Vanion, derivado de Rhovanion, terra dos cavaleiros de Rohan, por quem sempre tive admiração. Talvez tenhamos muitos cavalos!
 
