@@ -1,13 +1,14 @@
 ---
-import { Image } from 'astro:assets';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import '../styles/global.css'
-import space from '../assets/about.png'
+import { Image } from "astro:assets";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/global.css";
+import space from "../assets/about.png";
 const data = {
   title: "Sobre",
   description: "Sobre o blog",
-}
+};
 ---
+
 <style>
   .about-section {
     display: flex;
@@ -46,7 +47,7 @@ const data = {
       width: 100%;
     }
 
-    .about-content-img img{
+    .about-content-img img {
       width: 100%;
     }
   }
@@ -58,12 +59,26 @@ const data = {
       <div class="about-content">
         <h2>Sobre</h2>
         <div class="about-content-text">
-          <p>Bem-vindo ao Rumor Aleatório! Neste blog você encontrará ideias que encontro em livros, reflexões e conversas a respeito de ficção e RPG. Novo ou não no hobby, te convido a trocar um rumor, um meu por um seu. O que ouviu por ai?</p>
-          <p>Me chamo Vinícius, tenho 23 anos e já explorei Arrakis, Lordran, Tarbean, Beleriand e Terramar. Cada um com suas peculiaridades, dignas de serem investigadas. Se você é um devorador de mundos e gosta de RPG, encontrará aqui os rumores desses lugares.</p>
-          <p>Esse é um blog de RPG old-school, e apresento um estilo que busca emular as mesmas sensações de mistério e conquista de por o pé em uma galaxia tão, tão distante.</p>  
+          <p>
+            Bem-vindo ao Rumor Aleatório! Neste blog você encontrará ideias que
+            encontro em livros, reflexões e conversas a respeito de ficção e
+            RPG. Novo ou não no hobby, te convido a trocar um rumor, um meu por
+            um seu. O que ouviu por ai?
+          </p>
+          <p>
+            Me chamo Vinícius, tenho 23 anos e já explorei Arrakis, Lordran,
+            Tarbean, Beleriand e Terramar. Cada um com suas peculiaridades,
+            dignas de serem investigadas. Se você é um devorador de mundos e
+            gosta de RPG, encontrará aqui os rumores desses lugares.
+          </p>
+          <p>
+            Esse é um blog de RPG old-school, e apresento um estilo que busca
+            emular as mesmas sensações de mistério e conquista de por o pé em
+            uma galaxia tão, tão distante.
+          </p>
         </div>
         <div class="about-content-img">
-          <Image src={space} alt="outer space"/>
+          <Image src={space} alt="outer space" />
         </div>
       </div>
     </section>

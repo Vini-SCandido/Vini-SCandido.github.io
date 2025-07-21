@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  font-family: 'jblack';
-  src: url('/fonts/jblack.ttf') format('truetype');
+  font-family: "jblack";
+  src: url("/fonts/jblack.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -29,10 +29,10 @@ html {
 
 main {
   padding: 1rem;
-  line-height: 1.0;
+  line-height: 1;
   width: 100%;
   margin: auto;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding-top: 0px;
   padding-bottom: 0px;
 }

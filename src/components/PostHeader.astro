@@ -1,7 +1,8 @@
 ---
-import AuthorCard from "./AuthorCard.astro"
-const {frontmatter} = Astro.props
+import AuthorCard from "./AuthorCard.astro";
+const { frontmatter } = Astro.props;
 ---
+
 <style>
   .post-header {
     line-height: 1rem;
@@ -25,5 +26,5 @@ const {frontmatter} = Astro.props
 <div class="post-header">
   <h1>{frontmatter.title}</h1>
   <h2>{frontmatter.description}</h2>
-  <AuthorCard frontmatter={frontmatter}/>
+  <AuthorCard frontmatter={frontmatter} />
 </div>

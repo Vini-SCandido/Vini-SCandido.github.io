@@ -1,12 +1,12 @@
 ---
-import generateCharacter from '../scripts/character-generator.js';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import '../styles/global.css'
+import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/global.css";
 const data = {
   title: "Geradores",
   description: "Ferramentas de geração aleatória",
-}
+};
 ---
+
 <style>
   .generator-section {
     display: flex;
@@ -35,6 +35,41 @@ const data = {
     mix-blend-mode: darken;
   }
 
+  .generator-content-buttons {
+    padding-top: 1rem;
+  }
+
+  .generator-content-buttons button {
+    background-color: crimson;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Segoi UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  .generator-content-buttons button:hover {
+    background-color: #F082AC;
+  }
+
   .generator-content-text pre {
     line-height: 1.5rem;
     text-align: justify;
@@ -43,10 +78,11 @@ const data = {
 
   @media screen and (max-width: 768px) {
     .generator-content {
-      width: 100%;
+      width: 40ch;
+      justify-items: left;
     }
 
-    .generator-content-img img{
+    .generator-content-img img {
       width: 100%;
     }
   }
@@ -57,10 +93,24 @@ const data = {
     <section>
       <div class="generator-content">
         <h2>Geradores</h2>
+        <div class="generator-content-buttons">
+          <button id="generator-character-button">Personagem</button>
+        </div>
         <div class="generator-content-text">
-          <pre>{generateCharacter()}</pre>
+          <pre class="generator-content-output"></pre>
         </div>
       </div>
     </section>
+    <script>
+      import generateCharacter from "../scripts/character-generator";
+      document
+        .querySelector("#generator-character-button")
+        ?.addEventListener("click", () => {
+          const output = document.querySelector(".generator-content-output");
+          if (output) {
+            output.textContent = generateCharacter();
+          }
+        });
+    </script>
   </div>
 </BaseLayout>

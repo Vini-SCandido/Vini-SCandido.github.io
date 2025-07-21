@@ -1,8 +1,9 @@
 ---
-import { Image } from 'astro:assets'
-import avatar from '../assets/avatar.png'
-const { frontmatter } = Astro.props
+import { Image } from "astro:assets";
+import avatar from "../assets/avatar.png";
+const { frontmatter } = Astro.props;
 ---
+
 <style>
   .author-card {
     display: flex;
@@ -43,6 +44,6 @@ const { frontmatter } = Astro.props
   </div>
   <div class="author-card-text">
     <p>Vinicius Souza</p>
-    <p>{frontmatter.pubDate.toLocaleDateString('pt-BR')}</p>
+    <p>{frontmatter.pubDate.toLocaleDateString("pt-BR")}</p>
   </div>
 </div>

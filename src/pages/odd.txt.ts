@@ -3,9 +3,11 @@ import type { APIRoute } from "astro";
 
 // Roll 3d6
 function roll3d6(): number {
-  return Math.floor(Math.random() * 6 + 1) +
-         Math.floor(Math.random() * 6 + 1) +
-         Math.floor(Math.random() * 6 + 1);
+  return (
+    Math.floor(Math.random() * 6 + 1) +
+    Math.floor(Math.random() * 6 + 1) +
+    Math.floor(Math.random() * 6 + 1)
+  );
 }
 
 // B/X-style modifier: +1 for 15+, -1 for 6 or less, else +0

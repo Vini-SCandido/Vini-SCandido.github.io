@@ -1,13 +1,16 @@
 ---
-import ArchiveFeed from '../components/ArchiveFeed.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import '../styles/global.css'
-const allPosts = Object.values(import.meta.glob("./posts/*.md", { eager: true }));
+import ArchiveFeed from "../components/ArchiveFeed.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/global.css";
+const allPosts = Object.values(
+  import.meta.glob("./posts/*.md", { eager: true }),
+);
 const data = {
   title: "Arquivo",
   description: "Lista de postagens",
 };
 ---
+
 <style>
   .archive-section {
     display: flex;

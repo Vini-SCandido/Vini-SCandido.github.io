@@ -1,12 +1,14 @@
 ---
 import { getCollection } from "astro:content";
-const { number } = Astro.props
+const { number } = Astro.props;
 import ArchiveCard from "./ArchiveCard.astro";
-const allPosts = await getCollection("blog");
-const Posts = number === 0
-  ? allPosts
-  : allPosts.slice(0, number)
+const allPosts = (await getCollection("blog")).sort(
+  (a, b) =>
+    new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime(),
+);
+const Posts = number === 0 ? allPosts : allPosts.slice(0, number);
 ---
+
 <style>
   .archive-feed {
     display: flex;
@@ -18,5 +20,5 @@ const Posts = number === 0
 </style>
 
 <div class="archive-feed">
-  {Posts.map((post: any) => <ArchiveCard card={post}/>)}
+  {Posts.map((post: any) => <ArchiveCard card={post} />)}
 </div>

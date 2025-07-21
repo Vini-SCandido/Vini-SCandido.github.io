@@ -16,5 +16,9 @@
     "sanitize-html": "^2.14.0",
     "sharp": "^0.33.5",
     "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "prettier": "3.6.2",
+    "prettier-plugin-astro": "0.14.1"
   }
 }

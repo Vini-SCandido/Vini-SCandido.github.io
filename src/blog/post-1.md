@@ -1,13 +1,14 @@
 ---
-title: 'Por onde começar'
+title: "Por onde começar"
 pubDate: 2025-02-09
-description: 'Uma reflexão das primeiras experiências com RPGs'
-author: 'Vinicius Souza'
+description: "Uma reflexão das primeiras experiências com RPGs"
+author: "Vinicius Souza"
 image:
-    url: '../assets/title/post-1.jpg'
-    alt: 'Dois viajantes em um cenário nevado'
+  url: "../assets/title/post-1.jpg"
+  alt: "Dois viajantes em um cenário nevado"
 tags: ["#RPG", "#Preparação"]
 ---
+
 As primeiras experiências com qualquer hobby envolvem certos fracassos e aprendizados, momentos dos quais lembramos mais tarde com humor e reflexão. Contudo, embora pessoais, acredito que as experiências podem ter sido similares para muitos que começaram a brincar de faz de conta nos últimos dez anos. Sistemas que divergiam da proposta de jogo, pressão por performance teatral e plots intrincados podem ter aparecido nas suas primeiras sessões, criando a ideia de que esse é o único e tortuoso caminho. Contudo, ao escolher um conjunto de regras alinhado às expectativas, priorizar as decisões dos personagens e diversificar as soluções de problemas, a experiência será mais harmônica para mestre e jogador.
 
 De início, um grande fator que influenciará todo o restante das decisões é o gênero e tema. Talvez o desejo do grupo seja algo mais orientado a uma narrativa coletiva e logo perceberá que o combate com bandidos está demorando muito tempo, ou que as decisões táticas foram frustradas por falta de ferramentas para tal no sistema escolhido. É preciso levar em consideração também o número de páginas do livro de regras, a complexidade e até o idioma no qual o sistema está disponível. Todos esses fatores – e outros que possam surgir – influenciam o interesse dos participantes, especialmente se não estiverem alinhados com suas expectativas. Um exemplo é quando propõem-se jogar em uma cidade sombria e com alta criminalidade. Nesse caso, espera-se que o sistema ofereça procedimentos para emboscadas, roubos ou escalar telhados, elementos pouco relevantes em um cenário de horror cósmico. Logo, é necessário alinhar as ações buscadas na ficção com regras que permitam arbitrar aquele tipo de situação.

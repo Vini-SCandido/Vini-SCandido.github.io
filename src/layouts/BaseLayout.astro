@@ -1,39 +1,48 @@
 ---
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import '../styles/global.css'
-import ogImage from '../assets/og.jpg'
-const { data, image=ogImage, ogtype="website" } = Astro.props;
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import "../styles/global.css";
+import ogImage from "../assets/og.jpg";
+const { data, image = ogImage, ogtype = "website" } = Astro.props;
 ---
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
-    <link rel="alternate" type="application/rss+xml" title="Rumor Aleatório" href={`${Astro.site}rss.xml`} />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    <meta name="description" content=`${data.description}`>
+    <meta name="generator" content={Astro.generator} />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Rumor Aleatório"
+      href={`${Astro.site}rss.xml`}
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content=`${data.description}` />
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://vini-scandido.github.io/">
-    <meta property="og:type" content={ogtype}>
-    <meta property="og:title" content=`${data.title}`>
-    <meta property="og:description" content=`${data.description}`>
-    <meta property="og:image" content=`${image.src}`>
-    
+    <meta property="og:url" content="https://vini-scandido.github.io/" />
+    <meta property="og:type" content={ogtype} />
+    <meta property="og:title" content=`${data.title}` />
+    <meta property="og:description" content=`${data.description}` />
+    <meta property="og:image" content=`${image.src}` />
+
     <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="vini-scandido.github.io">
-    <meta property="twitter:url" content="https://vini-scandido.github.io/">
-    <meta name="twitter:title" content=`${data.title}`>
-    <meta name="twitter:description" content=`${data.description}`>
-    <meta name="twitter:image" content=`${image.src}`>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="vini-scandido.github.io" />
+    <meta property="twitter:url" content="https://vini-scandido.github.io/" />
+    <meta name="twitter:title" content=`${data.title}` />
+    <meta name="twitter:description" content=`${data.description}` />
+    <meta name="twitter:image" content=`${image.src}` />
     <title>{data.title}</title>
   </head>
   <body>
-	  <Header />
+    <Header />
     <main>
       <slot />
     </main>

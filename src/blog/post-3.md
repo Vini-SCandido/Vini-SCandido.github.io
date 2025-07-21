@@ -1,13 +1,14 @@
 ---
-title: 'ODND Solo #1'
+title: "ODND Solo #1"
 pubDate: 2025-07-16
-description: 'Comece com um mapa?'
-author: 'Vinicius Souza'
+description: "Comece com um mapa?"
+author: "Vinicius Souza"
 image:
-    url: '../assets/title/post-3.jpg'
-    alt: 'Guerreiros na neve'
+  url: "../assets/title/post-3.jpg"
+  alt: "Guerreiros na neve"
 tags: ["#RPG", "#OSR", "#Solo"]
 ---
+
 ## Como assim?
 
 No decorrer dos anos em contato com RPG de mesa, passei mais tempo lendo do que jogando. A ideia de jogar sozinho aparece de vez em quando, mas é difícil acreditar que a gente não pareça estranho fazendo isso.
@@ -20,7 +21,7 @@ Embora a maioria dos jogadores solitários costumem jogar e desenvolver seu pers
 
 ## ODND
 
-*Original Dungeons & Dragons*. Esse jogo de 1974 possui uma ênfase na exploração do mundo e de seus labirintos subterrâneos, além de ter raízes nos Wargames, por meio de seu antecessor *Chainmail*. Contudo, estarei utilizando uma releitura da caixa original, chamada *Seven Voyages of Zylathen*, que mantém a simplicidade e elegância das regras originais, além de beber de várias fontes, como Rei Arthur, Terra-média, Noites Arábicas, fantasia pulp e ficção científica.
+_Original Dungeons & Dragons_. Esse jogo de 1974 possui uma ênfase na exploração do mundo e de seus labirintos subterrâneos, além de ter raízes nos Wargames, por meio de seu antecessor _Chainmail_. Contudo, estarei utilizando uma releitura da caixa original, chamada _Seven Voyages of Zylathen_, que mantém a simplicidade e elegância das regras originais, além de beber de várias fontes, como Rei Arthur, Terra-média, Noites Arábicas, fantasia pulp e ficção científica.
 
 ## Vamos precisar de um mapa
 
@@ -28,17 +29,17 @@ Não é a primeira coisa que se pensa ao começar um jogo solo, que geralmente c
 
 Mapas geralmente demandam tempo e quando uma etapa começa a tomar tempo demais, posso acabar perdendo o interesse, então a verossimilhança será deixada um pouco de lado em favor de uma maior fluidez.
 
-Como guia, utilizei os procedimentos do blog *The Welsh Piper*, *[Hex-based Campaign Design](https://welshpiper.com/hex-based-campaign-design-part-1/)*, agrupando hexágonos em terrenos principais. Adicionei alguns rios e obtive o seguinte resultado:
+Como guia, utilizei os procedimentos do blog _The Welsh Piper_, _[Hex-based Campaign Design](https://welshpiper.com/hex-based-campaign-design-part-1/)_, agrupando hexágonos em terrenos principais. Adicionei alguns rios e obtive o seguinte resultado:
 
 ![img](../assets/1/map1.jpeg)
 
-Os pontos em vermelho são os principais pontos habitados, gerados por uma rolagem de 1 em 1d20. Escolhi o ponto mais privilegiado para ser uma cidade grande e sorteei os outros com base no livro 4: *The Campaign* de Zylarthen. Como cada hexágono representa 15 milhas, há espaço para assentamentos menores dentro de cada hexágono já ocupado.
+Os pontos em vermelho são os principais pontos habitados, gerados por uma rolagem de 1 em 1d20. Escolhi o ponto mais privilegiado para ser uma cidade grande e sorteei os outros com base no livro 4: _The Campaign_ de Zylarthen. Como cada hexágono representa 15 milhas, há espaço para assentamentos menores dentro de cada hexágono já ocupado.
 
-* △ São torres
-* ◆ São cidades médias
-* ◇ São vilarejos
-* ○ São templos
-* ■ São cidades grandes
+- △ São torres
+- ◆ São cidades médias
+- ◇ São vilarejos
+- ○ São templos
+- ■ São cidades grandes
 
 Agora só falta um nome para a região. Escolhi Vanion, derivado de Rhovanion, terra dos cavaleiros de Rohan, por quem sempre tive admiração. Talvez tenhamos muitos cavalos!
 

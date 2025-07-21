@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 const { card } = Astro.props;
 ---
+
 <style>
   .archive-card {
     border-radius: 0.5rem;
@@ -40,7 +41,8 @@ const { card } = Astro.props;
     padding: 1rem 1rem 1rem 0;
   }
 
-  .archive-card-text p, .archive-card-text h3 {
+  .archive-card-text p,
+  .archive-card-text h3 {
     margin: 0;
   }
 
@@ -70,7 +72,7 @@ const { card } = Astro.props;
     .archive-card-img {
       aspect-ratio: 1;
       height: auto;
-      margin: 0.5rem 0 0.5rem 0
+      margin: 0.5rem 0 0.5rem 0;
     }
 
     .archive-card-img img {
@@ -85,11 +87,16 @@ const { card } = Astro.props;
       <div class="archive-card-text">
         <h3>{card.data.title}</h3>
         <p>{card.data.description}</p>
-        <p>{card.data.pubDate.toLocaleDateString('pt-BR')}</p>
+        <p>{card.data.pubDate.toLocaleDateString("pt-BR")}</p>
       </div>
       <div class="archive-card-img">
-        <Image src={card.data.image.url} alt={card.data.image.alt} inferSize={ true } loading="eager"/>
+        <Image
+          src={card.data.image.url}
+          alt={card.data.image.alt}
+          inferSize={true}
+          loading="eager"
+        />
       </div>
-    </article > 
+    </article>
   </a>
 </div>

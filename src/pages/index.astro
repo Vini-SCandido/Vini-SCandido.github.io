@@ -1,14 +1,16 @@
 ---
-import { Image } from 'astro:assets';
-import ArchiveFeed from '../components/ArchiveFeed.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import '../styles/global.css'
-import lion from '../assets/lion.jpg'
+import { Image } from "astro:assets";
+import ArchiveFeed from "../components/ArchiveFeed.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/global.css";
+import lion from "../assets/lion.jpg";
 const data = {
   title: "Rumor Aleatório",
-  description: "Dicas de leitura, cenários, idéias, relatos e regras da casa para seu RPG de mesa",
-}
+  description:
+    "Dicas de leitura, cenários, idéias, relatos e regras da casa para seu RPG de mesa",
+};
 ---
+
 <style>
   .home-page-content {
     display: flex;
@@ -73,7 +75,7 @@ const data = {
     padding: 1rem;
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     .home-page-content {
       flex-direction: column;
     }
@@ -101,21 +103,50 @@ const data = {
     <div class="home-page-intro">
       <section>
         <h2>Um Rumor, Por Favor</h2>
-        <p>Dicas de leitura, cenários, idéias, relatos e regras da casa para seu RPG de mesa.</p>
+        <p>
+          Dicas de leitura, cenários, idéias, relatos e regras da casa para seu
+          RPG de mesa.
+        </p>
         <div class="home-page-intro-img">
-          <Image src={lion} alt="lion" loading="eager"/>
+          <Image src={lion} alt="lion" loading="eager" />
         </div>
         <div class="home-page-aside">
           <aside>
             <h2>Recomendações</h2>
             <nav>
               <ul>
-                <li><a target="_blank" href="https://www.youtube.com/@BanditsKeep">Bandit's Keep</a></li>
-                <li><a target="_blank" href="https://www.youtube.com/@dmquiral5942">DM Quiral</a></li>
-                <li><a target="_blank" href="https://www.youtube.com/@Earthmote">Earthmote</a></li>
-                <li><a target="_blank" href="https://www.youtube.com/@LokisLair">Loki's Lair</a></li>
-                <li><a target="_blank" href="https://www.youtube.com/@Chaoclypse">Chaoclypse</a></li>
-                <li><a target="_blank" href="https://www.youtube.com/@GeekGamers01">Geek Gamers</a></li>
+                <li>
+                  <a target="_blank" href="https://www.youtube.com/@BanditsKeep"
+                    >Bandit's Keep</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.youtube.com/@dmquiral5942">DM Quiral</a
+                  >
+                </li>
+                <li>
+                  <a target="_blank" href="https://www.youtube.com/@Earthmote"
+                    >Earthmote</a
+                  >
+                </li>
+                <li>
+                  <a target="_blank" href="https://www.youtube.com/@LokisLair"
+                    >Loki's Lair</a
+                  >
+                </li>
+                <li>
+                  <a target="_blank" href="https://www.youtube.com/@Chaoclypse"
+                    >Chaoclypse</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.youtube.com/@GeekGamers01">Geek Gamers</a
+                  >
+                </li>
               </ul>
             </nav>
           </aside>
