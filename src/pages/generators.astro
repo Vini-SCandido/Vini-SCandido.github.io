@@ -1,0 +1,66 @@
+---
+import generateCharacter from '../scripts/character-generator.js';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/global.css'
+const data = {
+  title: "Geradores",
+  description: "Ferramentas de geração aleatória",
+}
+---
+<style>
+  .generator-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .generator-content {
+    width: 80ch;
+    color: var(--color-text-gray);
+    padding: 1rem;
+  }
+
+  .generator-content h2 {
+    margin: 0;
+  }
+
+  .generator-content-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .generator-content-img img {
+    mix-blend-mode: darken;
+  }
+
+  .generator-content-text pre {
+    line-height: 1.5rem;
+    text-align: justify;
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .generator-content {
+      width: 100%;
+    }
+
+    .generator-content-img img{
+      width: 100%;
+    }
+  }
+</style>
+
+<BaseLayout data={data}>
+  <div class="generator-section">
+    <section>
+      <div class="generator-content">
+        <h2>Geradores</h2>
+        <div class="generator-content-text">
+          <pre>{generateCharacter()}</pre>
+        </div>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
